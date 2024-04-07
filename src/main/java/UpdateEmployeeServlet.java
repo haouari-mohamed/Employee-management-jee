@@ -12,12 +12,13 @@ public class EmployeeManagementService {
     public void updateEmployee(Employee updatedEmployee) {
         for (Employee employee : employees) {
             if (employee.getEmail().equals(updatedEmployee.getEmail())) {
-                // Update the employee information
+                // Update the employee info
                 employee.setName(updatedEmployee.getName());
                 employee.setPhoneNumber(updatedEmployee.getPhoneNumber());
                 employee.setDepartment(updatedEmployee.getDepartment());
                 employee.setPosition(updatedEmployee.getPosition());
-                break; // Exit the loop once the employee is found and updated
+                break; 
+                // whene he will found the employee he will exit
             }
         }
     }
